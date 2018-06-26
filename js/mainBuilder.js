@@ -336,10 +336,6 @@ var en = {
 var contacts = {
   "contacts": [
     {
-      "url": "http://elysium.enhost.pl/forum/",
-      "name": "Forum",
-    },
-    {
       "url": "https://www.wowprogress.com/guild/eu/shadowsong/Elysium",
       "name": "WoW Progress",
     },
