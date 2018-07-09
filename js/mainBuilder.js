@@ -336,6 +336,10 @@ var en = {
 var contacts = {
   "contacts": [
     {
+      "url": "https://raider.io/guilds/eu/shadowsong/Elysium",
+      "name": "Raider.io",
+    },
+    {
       "url": "https://www.wowprogress.com/guild/eu/shadowsong/Elysium",
       "name": "WoW Progress",
     },
