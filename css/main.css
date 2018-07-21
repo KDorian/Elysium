@@ -181,7 +181,15 @@ article {
 }
 
 .welcome-article {
-  padding: 20px 0px 0px 0px;
+  height: 600px;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 20px;
+}
+
+.welcome-article-img {
+  height: 600px;
+  width: 100%;
 }
 
 .article-img {
@@ -256,9 +264,6 @@ footer ul {
     list-style-type: none;
 }
 
-footer li {
 
-
-}
 
 /* ------------------------------------------------------------------------ */
