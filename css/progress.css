@@ -53,6 +53,7 @@
 /* Dropdown button -------------------------------------------------*/
 
 .dropdown {
+
   width: 20%;
   height: 50px;
   float: left;
@@ -61,6 +62,7 @@
 }
 
 .dropdown .dropbtn {
+  background-color: white;
     border: none;
     outline: none;
     padding: 14px 16px;
@@ -94,6 +96,21 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Progress ----------------------------------------------------*/
+
+.welcome-article {
+  height: 600px;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 20px;
+}
+
+.welcome-article-img {
+  height: 600px;
+  width: 100%;
+}
+
 /* Grid styles -------------------------------------------------*/
 .cards {
   display: grid;
