@@ -1,0 +1,126 @@
+.content {
+  background-color: white;
+  padding: 20px;
+}
+
+.about {
+
+}
+
+.meet-us {
+
+}
+
+.welcome-article {
+  height: 100%;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 20px;
+}
+
+.welcome-article-img {
+  height: 600px;
+  width: 100%;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+/* Meet the team -------------------------------------------------*/
+
+.column-gm {
+  height: 50%;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container-card {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Grid styles -------------------------------------------------*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 20px;
+  width: 100%;
+}
+
+.cards {
+  width: 100%;
+  margin: 0 auto 30px;
+  padding: 20px 0px 20px 0px;
+}
+
+article {
+position: relative;
+  max-width: 100%;
+  background-color: black;
+  text-align: justify;
+  padding: 20px;
+}
+
+.article-img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-title {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
