@@ -5,14 +5,15 @@
     <meta charset="utf-8">
     <title>Elysium</title>
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/progress.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="images/elysium-emblem.jpg">
   </head>
 
   <body>
-    <div class="all">
+    <div class="container">
       <div class="navbar">
-        <div class="center">
+
           <ul class="topnav">
             <li><a  href="index.html">Elysium</a></li>
             <li><a  href="about.html">O nas</a></li>
@@ -21,9 +22,71 @@
             <li><a href="recruitment.html">Rekrutacja</a></li>
           </ul>
         </div>
-      </div>
+
+        <div class="filter-progress">
+          <div id="myBtnContainer">
+            <button class="btn active-progress" onclick="filterSelection('all')">Pokaż wszystko</button>
+            <button class="btn" onclick="filterSelection('antorus')"> Antorus</button>
+            <button class="btn" onclick="filterSelection('tomb-of-sargeras')"> Tomb of Sargeras</button>
+            <button class="btn" onclick="filterSelection('nighthold')"> Nighthold</button>
+            <button class="btn" onclick="filterSelection('trial-of-valor')"> Trial of Valor</button>
+            <button class="btn" onclick="filterSelection('emerald-nightmare')"> Emerald Nightmare</button>
+          </div>
+        </div>
+
 
       <div class="content">
+        <section class="cards">
+        <article class="column antorus">
+          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
+          <h1 class="article-title">
+            Antorus
+          </h1>
+        </article>
+        <article class="column tomb-of-sargeras">
+          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
+          <h1 class="article-title">
+            Tomb of Sargeras
+          </h1>
+        </article>
+        <article class="column nighthold">
+          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
+          <h1 class="article-title">
+            Nighthold
+          </h1>
+        </article>
+        <article class="column trial-of-valor">
+          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
+          <h1 class="article-title">
+            Trial of Valor
+          </h1>
+        </article>
+        <article class="column emerald-nightmare">
+          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
+          <h1 class="article-title">
+            Emerald Nightmare
+          </h1>
+        </article>
+        <article class="column emerald-nightmare">
+          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
+          <h1 class="article-title">
+            Emerald Nightmare
+          </h1>
+        </article>
+        <article class="column emerald-nightmare">
+          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
+          <h1 class="article-title">
+            Emerald Nightmare
+          </h1>
+        </article>
+        <article class="column emerald-nightmare">
+          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
+          <h1 class="article-title">
+            Emerald Nightmare
+          </h1>
+        </article>
+
+      </section>
       </div>
 
 
@@ -44,5 +107,6 @@
   <script src="js/main.js"></script>
   <script src="js/mainHelper.js"></script>
   <script src="js/mainBuilder.js"></script>
+  <script src="js/progress.js"></script>
 
 </html>

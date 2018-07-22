@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box
+}
+
+/* Progress filter -------------------------------------------------*/
+
+.filter-progress {
+  position: fixed;
+  top:50px;
+  height:50px;
+  background-color: #333;
+  z-index: 2;
+}
+
+/* Hide columns by default */
+.column {
+    display: none;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+  float: left;
+  border: none;
+  outline: none;
+  height: 50px;
+  background-color: white;
+  cursor: pointer;
+  justify-content: space-around;
+  width: 16.65%
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active-progress {
+  background-color: #333;
+  color: white;
+}
+
+/* Grid styles -------------------------------------------------*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+}
+
+.cards {
+  max-width: 100%;
+  margin: 0 auto 30px;
+  padding: 20px 0px 20px 0px;
+}
+
+article {
+  position: relative;
+}
+
+.article-img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-title {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
