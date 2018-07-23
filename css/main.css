@@ -82,6 +82,11 @@ ul.topnav li {
   margin: 50px auto 100px auto;
 }
 
+.content {
+  background-color: white;
+  padding: 20px;
+}
+
 /* ------------------------------------------------------------------------ */
 
 /*Footer*/

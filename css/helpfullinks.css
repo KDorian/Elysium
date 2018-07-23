@@ -1,31 +1,34 @@
-
-
-.about {
-
+/* Class guides --------------------------------------------------*/
+.class-guides {
+  margin: 20px;
 }
 
-.meet-us {
-
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
 }
 
-.welcome-article {
-  height: 100%;
-  width: 100%;
-  padding: 20px 0px 20px 0px;
-  margin-bottom: 20px;
+.active-class, .accordion:hover {
+    background-color: #ccc;
 }
 
-.welcome-article-img {
-  height: 600px;
-  width: 100%;
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
-h1,
-h2 {
-  text-align: center;
-}
-
-/* Meet the team -------------------------------------------------*/
+/* Websites & addons links --------------------------------------------------- */
 
 /* Three columns side by side */
 .column {
@@ -78,40 +81,4 @@ h2 {
 
 .button:hover {
     background-color: #555;
-}
-
-/* Grid styles -------------------------------------------------*/
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  grid-gap: 20px;
-  width: 100%;
-}
-
-.cards {
-  width: 100%;
-  margin: 0 auto 30px;
-  padding: 20px 0px 20px 0px;
-}
-
-article {
-position: relative;
-  max-width: 100%;
-  background-color: black;
-  text-align: justify;
-  padding: 20px;
-}
-
-.article-img {
-  height: 400px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.article-title {
-  position: absolute;
-  bottom: 5px;
-  width: 100%;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
 }
