@@ -14,6 +14,7 @@ h2 {
 section {
   background-color: #333;
   margin-bottom: 20px;
+  padding-bottom: 10px;
   border-radius: 10px;
 }
 
@@ -31,16 +32,15 @@ section {
 /* Meet the team -------------------------------------------------*/
 
 /* Three columns side by side */
-.column {
+.meet-us-column {
     float: left;
     width: 33.3%;
-    margin-bottom: 16px;
     padding: 0 8px;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
-    .column {
+    .meet-us-column {
         width: 100%;
         display: block;
     }
@@ -84,52 +84,26 @@ section {
     display: table;
 }
 
-.title {
+/* Guild ranks -------------------------------------------------*/
 
+.rank-title,
+.rank-description {
+  color:#333;
 }
 
-/* .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
+.rank-description {
+  padding: 10px;
 }
 
-.button:hover {
-    background-color: #555;
-} */
-
-/* Grid styles -------------------------------------------------*/
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  grid-gap: 20px;
-  width: 100%;
-  margin: 0 auto 30px;
-  padding: 20px 0px 20px 0px;
+.ranks-column {
+    float: left;
+    width: 50%;
+    padding: 0 8px;
 }
 
-article {
-  max-width: 100%;
-  text-align: justify;
-  padding: 20px;
-}
-
-.article-img {
-  height: 400px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.article-title {
-  position: absolute;
-  bottom: 5px;
-  width: 100%;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.2);
+@media screen and (max-width: 650px) {
+    .ranks-column {
+        width: 100%;
+        display: block;
+    }
 }
