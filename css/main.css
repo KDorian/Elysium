@@ -17,7 +17,6 @@ body {
   background-position: center top;
   background-size: cover;
   font-family: "Lato", sans-serif;
-  color: #818181;
 }
 
 /* Width of all content */
@@ -127,7 +126,7 @@ footer a {
 }
 
 footer ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* ------------------------------------------------------------------------ */

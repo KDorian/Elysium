@@ -1,28 +1,31 @@
-
-
-.about {
-
-}
-
-.meet-us {
-
-}
-
-.welcome-article {
-  height: 100%;
-  width: 100%;
-  padding: 20px 0px 20px 0px;
-  margin-bottom: 20px;
-}
-
-.welcome-article-img {
-  height: 600px;
-  width: 100%;
+h1,
+h2,
+p {
+  color: white;
 }
 
 h1,
 h2 {
   text-align: center;
+}
+
+/* Section -----------------------------------------------*/
+
+section {
+  background-color: #333;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.top-section {
+  padding: 2.5% 0% 2.5% 0%;
+  margin: 0% 2% 0% 2%;
+  border-bottom: 1px solid white;
+}
+
+.bottom-section {
+  padding: 2.5% 2.5% 2.5% 2.5%;
+  text-align: justify;
 }
 
 /* Meet the team -------------------------------------------------*/
@@ -45,26 +48,47 @@ h2 {
 
 /* Add some shadows to create a card effect */
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.name,
+.title,
+.alts,
+.battle-net,
+.armory {
+  text-align: center;
+  color: #333;
+}
+
+.photo {
+  width:100%;
+  border-radius: 5px;
+}
+
+.card a {
+  text-decoration: none;
 }
 
 /* Some left and right padding inside the container */
 .container-card {
-    padding: 0 16px;
+  padding: 0 16px;
 }
 
 /* Clear floats */
-.container::after, .row::after {
+.container-card::after, .row::after {
     content: "";
     clear: both;
     display: table;
 }
 
 .title {
-    color: grey;
+
 }
 
-.button {
+/* .button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -78,7 +102,7 @@ h2 {
 
 .button:hover {
     background-color: #555;
-}
+} */
 
 /* Grid styles -------------------------------------------------*/
 .cards {
@@ -86,18 +110,12 @@ h2 {
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   grid-gap: 20px;
   width: 100%;
-}
-
-.cards {
-  width: 100%;
   margin: 0 auto 30px;
   padding: 20px 0px 20px 0px;
 }
 
 article {
-position: relative;
   max-width: 100%;
-  background-color: black;
   text-align: justify;
   padding: 20px;
 }

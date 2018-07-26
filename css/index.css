@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   grid-gap: 20px;
-
 }
 
 .cards {
@@ -11,8 +10,6 @@
   margin: 0 auto 30px;
   padding: 20px 0px 20px 0px;
 }
-
-
 
 article {
   position: relative;
