@@ -32,7 +32,7 @@ section {
 /* Meet the team -------------------------------------------------*/
 
 /* Three columns side by side */
-.meet-us-column {
+.column {
     float: left;
     width: 33.3%;
     padding: 0 8px;
@@ -40,7 +40,7 @@ section {
 
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
-    .meet-us-column {
+    .column {
         width: 100%;
         display: block;
     }
@@ -86,24 +86,11 @@ section {
 
 /* Guild ranks -------------------------------------------------*/
 
+.rank-title {
+  text-align: left;
+}
+
 .rank-title,
 .rank-description {
-  color:#333;
-}
-
-.rank-description {
   padding: 10px;
-}
-
-.ranks-column {
-    float: left;
-    width: 50%;
-    padding: 0 8px;
-}
-
-@media screen and (max-width: 650px) {
-    .ranks-column {
-        width: 100%;
-        display: block;
-    }
 }
