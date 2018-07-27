@@ -9,7 +9,7 @@ h2 {
   text-align: center;
 }
 
-/* Section -----------------------------------------------*/
+/*// Section //*/
 
 section {
   background-color: #333;
@@ -29,7 +29,7 @@ section {
   text-align: justify;
 }
 
-/* Meet the team -------------------------------------------------*/
+/*// Meet the team //*/
 
 /* Three columns side by side */
 .column {
@@ -48,33 +48,25 @@ section {
 
 /* Add some shadows to create a card effect */
 .card {
-  background-color: white;
+  background-color: #333;
   border: 5px solid white;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .name,
-.title,
-.alts,
-.battle-net,
-.armory {
+.title {
   text-align: center;
-  color: #333;
+  color: #fff;
+  padding: 10px 0;
 }
 
 .photo {
   width:100%;
-  border-radius: 5px;
 }
 
 .card a {
   text-decoration: none;
-}
-
-/* Some left and right padding inside the container */
-.container-card {
-  padding: 0 16px;
 }
 
 /* Clear floats */
@@ -84,7 +76,7 @@ section {
     display: table;
 }
 
-/* Guild ranks -------------------------------------------------*/
+/*// Guild ranks //*/
 
 .rank-title {
   text-align: left;
