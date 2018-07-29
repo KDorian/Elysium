@@ -1,3 +1,53 @@
+var meetUs = {
+  "meetUs": [
+    {
+      "name": "Sargone",
+      "image": "images/meet-us/officers/500x500.png",
+      "title": "Guildmaster",
+    },
+    {
+      "title": "Officer",
+      "image": "images/meet-us/officers/500x500.png",
+      "name": "1",
+    },
+    {
+      "title": "Officer",
+      "image": "images/meet-us/officers/500x500.png",
+      "name": "2",
+    },
+    {
+      "title": "Officer",
+      "image": "images/meet-us/officers/500x500.png",
+      "name": "3",
+    },
+    {
+      "title": "Officer",
+      "image": "images/meet-us/officers/500x500.png",
+      "name": "4",
+    },
+    {
+      "title": "Officer",
+      "image": "images/meet-us/officers/500x500.png",
+      "name": "5",
+    },
+  ],
+  "display": function() {
+    var n = 0;
+    for(let i=0; i < 2; i++) {
+      $("#meetUs").append(HTMLmeetUsStart);
+      for(let j=0; j < 3; j++) {
+        var formattedMeetUsName = HTMLmeetUsName.replace("%meet-us-name%", meetUs['meetUs'][n]['name']);
+        var formattedMeetUsPhoto = HTMLmeetUsPhoto.replace("%meet-us-photo-src%", meetUs['meetUs'][n]['image']).replace("%meet-us-photo-alt%", meetUs['meetUs'][n]['name']);
+        var formattedMeetUsTitle = HTMLmeetUsTitle.replace("%meet-us-title%", meetUs['meetUs'][n]['title']);
+        $(".meet-us-entry:last").append(formattedMeetUsName + formattedMeetUsPhoto + formattedMeetUsTitle);
+        n++;
+      };
+    };
+  }
+};
+
+meetUs.display();
+
 var ranks = {
   "ranks": [
     {
