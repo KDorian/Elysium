@@ -29,6 +29,16 @@ section {
   text-align: justify;
 }
 
+/*// Welcome article //*/
+
+article p {
+  margin-bottom: 10px;
+}
+
+.question {
+  text-align: center;
+}
+
 /*// Meet the team //*/
 
 /* Three columns side by side */
@@ -80,6 +90,12 @@ section {
 
 .rank-title {
   text-align: left;
+}
+
+.rank-description {
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .rank-title,

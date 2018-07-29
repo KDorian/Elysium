@@ -8,27 +8,27 @@ var meetUs = {
     {
       "title": "Officer",
       "image": "images/meet-us/officers/500x500.png",
-      "name": "1",
+      "name": "Degnar",
     },
     {
       "title": "Officer",
       "image": "images/meet-us/officers/500x500.png",
-      "name": "2",
+      "name": "Eothelis",
     },
     {
       "title": "Officer",
       "image": "images/meet-us/officers/500x500.png",
-      "name": "3",
+      "name": "Mysti",
     },
     {
       "title": "Officer",
       "image": "images/meet-us/officers/500x500.png",
-      "name": "4",
+      "name": "Taka",
     },
     {
       "title": "Officer",
       "image": "images/meet-us/officers/500x500.png",
-      "name": "5",
+      "name": "Tyrandull",
     },
   ],
   "display": function() {
