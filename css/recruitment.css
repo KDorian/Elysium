@@ -35,15 +35,44 @@ h2 {
 
 /*// Class recruitment //*/
 
+table,
+tr,
+td {
+  padding:  0;
+  background-color: #ffffff;
+}
+
+
+table {
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.class-name {
+  padding-left: 10px;
+  width: 60%;
+}
+
+
+
 .class-name,
 .class-spec {
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .class-spec {
-  width: 36px;
+  width: 10%;
 }
 
+.class-image {
+  height: 36px;
+}
+
+.close {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
 
 /*// Class colors //*/
 

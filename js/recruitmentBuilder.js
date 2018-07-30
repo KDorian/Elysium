@@ -5,32 +5,41 @@ var recruitmentTable = {
       "spec-name": [
         "Blood",
         "Frost",
-        "Unholy"
+        "Unholy",
+        ""
       ],
       "spec-icon": [
         "images/recruitment/classes/dk-spec-blood.jpg",
         "images/recruitment/classes/dk-spec-frost.jpg",
-        "images/recruitment/classes/dk-spec-unholy.jpg"
+        "images/recruitment/classes/dk-spec-unholy.jpg",
+        ""
       ],
       "recruitment": [
         "open",
         "open",
-        "open"
+        "open",
+        ""
       ]
     },
     {
       "class": "Demon Hunter",
       "spec-name": [
         "Havoc",
-        "Vengeance"
+        "Vengeance",
+        "",
+        ""
       ],
       "spec-icon": [
         "images/recruitment/classes/dh-spec-havoc.jpg",
-        "images/recruitment/classes/dh-spec-vengeance.jpg"
+        "images/recruitment/classes/dh-spec-vengeance.jpg",
+        "",
+        ""
       ],
       "recruitment": [
         "open",
-        "open"
+        "open",
+        "",
+        ""
       ]
     },
     {
@@ -59,17 +68,20 @@ var recruitmentTable = {
       "spec-name": [
         "Beast Mastery",
         "Marksmanship",
-        "Survival"
+        "Survival",
+        ""
       ],
       "spec-icon": [
         "images/recruitment/classes/hunter-spec-beastmastery.jpg",
-        "images/recruitment/classes/hunter-spec-maksmanship.jpg",
-        "images/recruitment/classes/hunter-spec-survival.jpg"
+        "images/recruitment/classes/hunter-spec-marksmanship.jpg",
+        "images/recruitment/classes/hunter-spec-survival.jpg",
+        ""
       ],
       "recruitment": [
         "open",
         "open",
-        "open"
+        "open",
+        ""
       ]
     },
     {
@@ -77,17 +89,20 @@ var recruitmentTable = {
       "spec-name": [
         "Arcane",
         "Fire",
-        "Frost"
+        "Frost",
+        ""
       ],
       "spec-icon": [
         "images/recruitment/classes/mage-spec-arcane.jpg",
         "images/recruitment/classes/mage-spec-fire.jpg",
-        "images/recruitment/classes/mage-spec-frost.jpg"
+        "images/recruitment/classes/mage-spec-frost.jpg",
+        ""
       ],
       "recruitment": [
         "open",
         "open",
-        "open"
+        "open",
+        ""
       ]
     },
     {
@@ -95,17 +110,20 @@ var recruitmentTable = {
       "spec-name": [
         "Brewmaster",
         "Mistweaver",
-        "Windwalker"
+        "Windwalker",
+        ""
       ],
       "spec-icon": [
         "images/recruitment/classes/monk-spec-brewmaster.jpg",
         "images/recruitment/classes/monk-spec-mistweaver.jpg",
-        "images/recruitment/classes/monk-spec-windwalker.jpg"
+        "images/recruitment/classes/monk-spec-windwalker.jpg",
+        ""
       ],
       "recruitment": [
         "open",
         "open",
-        "open"
+        "open",
+        ""
       ]
     },
     {
@@ -113,17 +131,20 @@ var recruitmentTable = {
       "spec-name": [
         "Holy",
         "Protection",
-        "Retribution"
+        "Retribution",
+        ""
       ],
       "spec-icon": [
         "images/recruitment/classes/paladin-spec-holy.jpg",
         "images/recruitment/classes/paladin-spec-protection.jpg",
-        "images/recruitment/classes/paladin-spec-retribution.jpg"
+        "images/recruitment/classes/paladin-spec-retribution.jpg",
+        ""
       ],
       "recruitment": [
         "open",
         "open",
-        "open"
+        "open",
+        ""
       ]
     },
     {
@@ -131,17 +152,20 @@ var recruitmentTable = {
       "spec-name": [
         "Discipline",
         "Holy",
-        "Shadow"
+        "Shadow",
+        ""
       ],
       "spec-icon": [
         "images/recruitment/classes/priest-spec-discipline.jpg",
         "images/recruitment/classes/priest-spec-holy.jpg",
-        "images/recruitment/classes/priest-spec-shadow.jpg"
+        "images/recruitment/classes/priest-spec-shadow.jpg",
+        ""
       ],
       "recruitment": [
         "open",
         "open",
-        "open"
+        "open",
+        ""
       ]
     },
     {
@@ -149,17 +173,20 @@ var recruitmentTable = {
       "spec-name": [
         "Assassination",
         "Outlaw",
-        "Subtlety"
+        "Subtlety",
+        ""
       ],
       "spec-icon": [
         "images/recruitment/classes/rogue-spec-assassination.jpg",
         "images/recruitment/classes/rogue-spec-outlaw.jpg",
-        "images/recruitment/classes/rogue-spec-subtlety.jpg"
+        "images/recruitment/classes/rogue-spec-subtlety.jpg",
+        ""
       ],
       "recruitment": [
         "open",
         "open",
-        "open"
+        "open",
+        ""
       ]
     },
     {
@@ -167,17 +194,20 @@ var recruitmentTable = {
       "spec-name": [
         "Elemental",
         "Enhancement",
-        "Restoration"
+        "Restoration",
+        ""
       ],
       "spec-icon": [
         "images/recruitment/classes/shaman-spec-elemental.jpg",
         "images/recruitment/classes/shaman-spec-enhancement.jpg",
-        "images/recruitment/classes/shaman-spec-restoration.jpg"
+        "images/recruitment/classes/shaman-spec-restoration.jpg",
+        ""
       ],
       "recruitment": [
         "open",
         "open",
-        "open"
+        "open",
+        ""
       ]
     },
     {
@@ -185,17 +215,20 @@ var recruitmentTable = {
       "spec-name": [
         "Affliction",
         "Demonology",
-        "Destruction"
+        "Destruction",
+        ""
       ],
       "spec-icon": [
         "images/recruitment/classes/warlock-spec-affliction.jpg",
         "images/recruitment/classes/warlock-spec-demonology.jpg",
-        "images/recruitment/classes/warlock-spec-destruction.jpg"
+        "images/recruitment/classes/warlock-spec-destruction.jpg",
+        ""
       ],
       "recruitment": [
         "open",
         "open",
-        "open"
+        "open",
+        ""
       ]
     },
     {
@@ -203,17 +236,35 @@ var recruitmentTable = {
       "spec-name": [
         "Arms",
         "Fury",
-        "Protection"
+        "Protection",
+        ""
       ],
       "spec-icon": [
         "images/recruitment/classes/warrior-spec-arms.jpg",
         "images/recruitment/classes/warrior-spec-fury.jpg",
-        "images/recruitment/classes/warrior-spec-protection.jpg"
+        "images/recruitment/classes/warrior-spec-protection.jpg",
+        ""
       ],
       "recruitment": [
         "open",
         "open",
-        "open"
+        "open",
+        ""
       ]
     }
-}
+  ],
+  "display": function() {
+    $("#recruitmentTable").append(HTMLrecruitmentTableStart);
+    for(let i=0; i < 12; i++) {
+      var formattedRecruitmentTableClass = HTMLrecruitmentTableClass.replace("%class-name%", recruitmentTable['recruitmentTable'][i]['class']);
+      $(".recruitment-table-entry:last").append(formattedRecruitmentTableClass);
+      for(let j=0; j < 4; j++) {
+        var formattedRecruitmentTableSpec = HTMLrecruitmentTableSpec.replace("%recruitment-status%", recruitmentTable['recruitmentTable'][i]['recruitment'][j]).replace("%spec-image%", recruitmentTable['recruitmentTable'][i]['spec-icon'][j]).replace("%spec-name%", recruitmentTable['recruitmentTable'][i]['spec-name'][j]).replace("%spec-alt%", recruitmentTable['recruitmentTable'][i]['spec-name'][j]);
+        $(".class-spec-entry:last").append(formattedRecruitmentTableSpec);
+      }
+
+    }
+  }
+};
+
+recruitmentTable.display();
