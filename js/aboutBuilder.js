@@ -7,7 +7,7 @@ var meetUs = {
     },
     {
       "title": "Officer",
-      "image": "images/meet-us/officers/500x500.png",
+      "image": "images/meet-us/officers/Degnar.png",
       "name": "Degnar",
     },
     {
@@ -17,12 +17,12 @@ var meetUs = {
     },
     {
       "title": "Officer",
-      "image": "images/meet-us/officers/500x500.png",
+      "image": "images/meet-us/officers/Mytsi.png",
       "name": "Mysti",
     },
     {
       "title": "Officer",
-      "image": "images/meet-us/officers/500x500.png",
+      "image": "images/meet-us/officers/Takanuva.png",
       "name": "Taka",
     },
     {

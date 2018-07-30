@@ -1,11 +1,23 @@
-.content {
-  background-color: white;
-  height: 1000px;
+h1,
+h2,
+p {
+  color: white;
+}
+
+h1,
+h2 {
+  text-align: center;
 }
 
 .article-img {
   height: 48px;
   /* width: 100%; */
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .column {
@@ -20,6 +32,18 @@
     width: 66.6%;
     margin-bottom: 16px;
 } */
+
+/*// Class recruitment //*/
+
+.class-name,
+.class-spec {
+  display: inline-block;
+}
+
+.class-spec {
+  width: 36px;
+}
+
 
 /*// Class colors //*/
 
