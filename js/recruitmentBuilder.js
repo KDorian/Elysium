@@ -268,3 +268,42 @@ var recruitmentTable = {
 };
 
 recruitmentTable.display();
+
+var recruitmentContacts = {
+  "recruitmentContacts": [
+    {
+      "name": "Sargone",
+      "battleNetTag": "Sargone#2614"
+    },
+    {
+      "name": "Degnar",
+      "battleNetTag": "Degnar#2681"
+    },
+    {
+      "name": "Eothelis",
+      "battleNetTag": "Deyneris#1348"
+    },
+    {
+      "name": "Mytsi",
+      "battleNetTag": "Magmus#2759"
+    },
+    {
+      "name": "Takanuva",
+      "battleNetTag": "Takanuva#2604"
+    },
+    {
+      "name": "Tyrandull",
+      "battleNetTag": "Dullahan#2331"
+    },
+  ],
+  "display": function() {
+
+    recruitmentContacts.recruitmentContacts.forEach(function(recruitmentContact) {
+      $("#battletag").append(HTMLrecruitmentContactStart);
+      var formattedRecruitmentContact = HTMLrecruitmentContact.replace("%name%", recruitmentContact.name).replace("%battle-net-tag%", recruitmentContact.battleNetTag);
+      $(".recruitment-contact-entry:last").append(formattedRecruitmentContact);
+    });
+  }
+};
+
+recruitmentContacts.display();

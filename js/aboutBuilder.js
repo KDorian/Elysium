@@ -2,7 +2,7 @@ var meetUs = {
   "meetUs": [
     {
       "name": "Sargone",
-      "image": "images/meet-us/officers/500x500.png",
+      "image": "images/meet-us/officers/Sargone.png",
       "title": "Guildmaster",
     },
     {
@@ -23,11 +23,11 @@ var meetUs = {
     {
       "title": "Officer",
       "image": "images/meet-us/officers/Takanuva.png",
-      "name": "Taka",
+      "name": "Takanuva",
     },
     {
       "title": "Officer",
-      "image": "images/meet-us/officers/500x500.png",
+      "image": "images/meet-us/officers/Tyrandull.png",
       "name": "Tyrandull",
     },
   ],

@@ -9,6 +9,10 @@ h2 {
   text-align: center;
 }
 
+p {
+  line-height: 30px;
+}
+
 .article-img {
   height: 48px;
   /* width: 100%; */
@@ -32,6 +36,34 @@ h2 {
     width: 66.6%;
     margin-bottom: 16px;
 } */
+
+.first-note {
+  margin-bottom: 30px;
+}
+
+.recruitment-name,
+.recruitment-tag {
+  display: inline-block;
+  width: 50%;
+  color: #FFFFFF;
+}
+
+.center {
+  text-align: center;
+}
+
+.discord {
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.discord:hover {
+  background-color: #ffffff;
+  color: #333;
+}
 
 /*// Class recruitment //*/
 
