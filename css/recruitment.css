@@ -13,16 +13,25 @@ p {
   line-height: 30px;
 }
 
-.article-img {
-  height: 48px;
-  /* width: 100%; */
+/*// Regulation //*/
+
+.regs h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+.regs {
+  padding-left: 10%;
+  padding-right: 10%;
+  line-height: 30px;
 }
+
+.regs li {
+  color: #FFFFFF;
+  list-style-type: decimal;
+}
+
+/*// Recruitment //*/
 
 .column {
     float: left;
@@ -31,11 +40,18 @@ p {
     padding: 0 8px;
 }
 
-/* .column-2 {
-    float: left;
-    width: 66.6%;
-    margin-bottom: 16px;
-} */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
 
 .first-note {
   margin-bottom: 30px;
@@ -65,7 +81,11 @@ p {
   color: #333;
 }
 
-/*// Class recruitment //*/
+.bottom-section h2 {
+  margin-bottom: 20px;
+}
+
+/*// Class recruitment table //*/
 
 table,
 tr,
@@ -86,14 +106,8 @@ table {
   width: 60%;
 }
 
-
-
-.class-name,
 .class-spec {
-  /* display: inline-block; */
-}
-
-.class-spec {
+  color: #333;
   width: 10%;
 }
 
@@ -101,57 +115,7 @@ table {
   height: 36px;
 }
 
-.close {
+.closed {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
-}
-
-/*// Class colors //*/
-
-.death-knight {
-  background-color: #C41F3B;
-}
-
-.demon-hunter {
-  background-color: #A330C9;
-}
-
-.druid {
-  background-color: #FF7D0A;
-}
-
-.hunter {
-  background-color: #ABD473;
-}
-
-.mage {
-  background-color: #40C7EB;
-}
-
-.monk {
-  background-color: #00FF96;
-}
-
-.paladin {
-  background-color: #F58CBA;
-}
-
-.priest {
-  background-color: #FFFFFF;
-}
-
-.rogue {
-  background-color: #FFF569;
-}
-
-.shaman {
-  background-color: #0070DE;
-}
-
-.warlock {
-  background-color: #8787ED;
-}
-
-.warrior {
-  background-color: #C79C6E;
 }

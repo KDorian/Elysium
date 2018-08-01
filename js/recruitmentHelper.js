@@ -4,3 +4,7 @@ var HTMLrecruitmentTableSpec = '<td class="class-spec"><img class="class-image %
 
 var HTMLrecruitmentContactStart = '<div class="center recruitment-contact-entry"></div>'
 var HTMLrecruitmentContact = '<div class="recruitment-name">%name%</div><div class="recruitment-tag">%battle-net-tag%</div>'
+
+var HTMLregulationStart = '<div class="regulations-entry"></div>';
+var HTMLregulationTitle = '<h2>%title%</h2><ul id="description" class="description-entry">';
+var HTMLregulationDescription = '<li>%description%</li>';
