@@ -1,6 +1,11 @@
+h1 {
+  color: #FFFFFF;
+  text-align: center;
+}
+
 /* Class guides --------------------------------------------------*/
 .class-guides {
-  margin: 20px;
+
 }
 
 .accordion {
@@ -26,6 +31,32 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+}
+
+/* .panel a:link {
+  background-color: green;
+} */
+
+.panel p {
+  width: 100%;
+}
+
+.class-guides {
+  padding: 20px;
+  color: #ffffff;
+  margin: 20px auto;
+  width: 100%;
+  cursor: pointer;
+  /* line-height: 30px; */
+  text-align: center;
+  text-decoration: none;
+  background-color: #333;
+  border: none;
+  outline: 0;
+}
+
+.class-guides:hover {
+
 }
 
 /* Websites & addons links --------------------------------------------------- */
