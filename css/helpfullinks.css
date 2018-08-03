@@ -4,13 +4,13 @@ h1 {
 }
 
 /* Class guides --------------------------------------------------*/
-.class-guides {
-
+.class-guides-entry {
+  margin-bottom: 20px;
 }
 
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #333333;
+    color: #FFFFFF;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -19,32 +19,49 @@ h1 {
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+    border: solid 1px #ffffff;
 }
 
-.active-class, .accordion:hover {
-    background-color: #ccc;
+.priest.accordion,
+.priest.panel {
+  border: solid 1px #000000;
+}
+
+.active-class {
+    background-color: #666666;
+}
+
+.accordion:hover {
+  background-color: #666666;
+  color: #FFFFFF;
 }
 
 .panel {
-    padding: 0 18px;
-    background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    border-bottom: solid 1px #ffffff;
+    border-left: solid 1px #ffffff;
+    border-right: solid 1px #ffffff;
 }
 
-/* .panel a:link {
-  background-color: green;
-} */
-
 .panel p {
+  padding: 20px;
   width: 100%;
 }
 
-.class-guides {
+.guide-entry p:hover {
+  background-color: #ffffff;
+}
+
+p.priest:hover {
+  background-color: #000000;
+}
+
+.class-guides-link {
   padding: 20px;
   color: #ffffff;
-  margin: 20px auto;
+  margin: 0px auto;
   width: 100%;
   cursor: pointer;
   /* line-height: 30px; */
@@ -53,6 +70,18 @@ h1 {
   background-color: #333;
   border: none;
   outline: 0;
+}
+
+.class-icon {
+  width: 39px;
+  height: 39px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.accordion-button {
+  font-size: 39px;
+  display: inline-block;
 }
 
 .class-guides:hover {
@@ -118,22 +147,27 @@ h1 {
 
 .death-knight {
   background-color: #C41F3B;
+  color: #FFFFFF;
 }
 
 .demon-hunter {
   background-color: #A330C9;
+  color: #FFFFFF;
 }
 
 .druid {
   background-color: #FF7D0A;
+  color: #FFFFFF;
 }
 
 .hunter {
   background-color: #ABD473;
+  color: #FFFFFF;
 }
 
 .mage {
   background-color: #40C7EB;
+  color: #FFFFFF;
 }
 
 .monk {

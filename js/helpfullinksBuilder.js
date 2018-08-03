@@ -3,6 +3,8 @@ var classGuides = {
     {
       "name": "Death Knight",
       "color": "death-knight",
+      "icon": "images/recruitment/classes/dk-icon.png",
+      "alt": "Class icon of death knights",
       "guideName": [
         "Acherus"
       ],
@@ -13,6 +15,8 @@ var classGuides = {
     {
       "name": "Demon Hunter",
       "color": "demon-hunter",
+      "icon": "images/recruitment/classes/dh-icon.png",
+      "alt": "Class icon of demon hunters",
       "guideName": [
         "The Fel Hammer",
         "Mardum"
@@ -25,6 +29,8 @@ var classGuides = {
     {
       "name": "Druid",
       "color": "druid",
+      "icon": "images/recruitment/classes/druid-icon.png",
+      "alt": "Class icon of druids",
       "guideName": [
         "Dreamgrove"
       ],
@@ -35,6 +41,8 @@ var classGuides = {
     {
       "name": "Hunter",
       "color": "hunter",
+      "icon": "images/recruitment/classes/hunter-icon.png",
+      "alt": "Class icon of hunters",
       "guideName": [
         "Trueshot Lodge",
         "Warcraft Hunter's Union"
@@ -47,6 +55,8 @@ var classGuides = {
     {
       "name": "Mage",
       "color": "mage",
+      "icon": "images/recruitment/classes/mage-icon.png",
+      "alt": "Class icon of mages",
       "guideName": [
         "Hall of the Guardians"
       ],
@@ -57,6 +67,8 @@ var classGuides = {
     {
       "name": "Monk",
       "color": "monk",
+      "icon": "images/recruitment/classes/monk-icon.png",
+      "alt": "Class icon of monks",
       "guideName": [
         "PeakOfSerenity"
       ],
@@ -67,6 +79,8 @@ var classGuides = {
     {
       "name": "Paladin",
       "color": "paladin",
+      "icon": "images/recruitment/classes/paladin-icon.png",
+      "alt": "Class icon of paladins",
       "guideName": [
         "Hammer of Wrath"
       ],
@@ -77,6 +91,8 @@ var classGuides = {
     {
       "name": "Priest",
       "color": "priest",
+      "icon": "images/recruitment/classes/priest-icon.png",
+      "alt": "Class icon of priests",
       "guideName": [
         "Warcraft Priests",
         "Netherlight Temple",
@@ -91,6 +107,8 @@ var classGuides = {
     {
       "name": "Rogue",
       "color": "rogue",
+      "icon": "images/recruitment/classes/rogue-icon.png",
+      "alt": "Class icon of rogues",
       "guideName": [
         "Ravenholdt"
       ],
@@ -101,6 +119,8 @@ var classGuides = {
     {
       "name": "Shaman",
       "color": "shaman",
+      "icon": "images/recruitment/classes/shaman-icon.png",
+      "alt": "Class icon of shamans",
       "guideName": [
         "Earthshrine",
         "Ancestral Guidance"
@@ -113,6 +133,8 @@ var classGuides = {
     {
       "name": "Warlock",
       "color": "warlock",
+      "icon": "images/recruitment/classes/warlock-icon.png",
+      "alt": "Class icon of warlocks",
       "guideName": [
         "Council of the Black Harvest"
       ],
@@ -123,6 +145,8 @@ var classGuides = {
     {
       "name": "Warrior",
       "color": "warrior",
+      "icon": "images/recruitment/classes/warrior-icon.png",
+      "alt": "Class icon of warriors",
       "guideName": [
         "Skyhold"
       ],
@@ -134,10 +158,10 @@ var classGuides = {
   "display": function() {
     classGuides.classGuides.forEach(function(classGuide) {
       $("#classGuides").append(HTMLclassGuidesStart);
-      var formattedClassGuidesButton = HTMLclassGuidesButton.replace("%class-color%", classGuide.color).replace("%class-name%", classGuide.name);
+      var formattedClassGuidesButton = HTMLclassGuidesButton.replace("%class-name%", classGuide.name).replace("%class-icon%", classGuide.icon).replace("%class-alt%", classGuide.alt);
       $(".class-guides-entry:last").append(formattedClassGuidesButton);
       for(let i=0; i < classGuide.guideName.length; i++) {
-        var formattedClassGuidesLink = HTMLclassGuidesLink.replace("%discord-address%", classGuide['link'][i]).replace("%discord-name%", classGuide['guideName'][i]);
+        var formattedClassGuidesLink = HTMLclassGuidesLink.replace("%class-color%", classGuide.color).replace("%discord-address%", classGuide['link'][i]).replace("%discord-name%", classGuide['guideName'][i]);
         $(".guide-entry:last").append(formattedClassGuidesLink);
       }
     });
