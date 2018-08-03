@@ -1,8 +1,9 @@
 var classGuides = {
   "classGuides": [
     {
-      "class": "Death Knight",
-      "name": [
+      "name": "Death Knight",
+      "color": "death-knight",
+      "guideName": [
         "Acherus"
       ],
       "link": [
@@ -10,8 +11,9 @@ var classGuides = {
       ]
     },
     {
-      "class": "Demon Hunter",
-      "name": [
+      "name": "Demon Hunter",
+      "color": "demon-hunter",
+      "guideName": [
         "The Fel Hammer",
         "Mardum"
       ],
@@ -21,8 +23,9 @@ var classGuides = {
       ]
     },
     {
-      "class": "Druid",
-      "name": [
+      "name": "Druid",
+      "color": "druid",
+      "guideName": [
         "Dreamgrove"
       ],
       "link": [
@@ -30,8 +33,9 @@ var classGuides = {
       ]
     },
     {
-      "class": "Hunter",
-      "name": [
+      "name": "Hunter",
+      "color": "hunter",
+      "guideName": [
         "Trueshot Lodge",
         "Warcraft Hunter's Union"
       ],
@@ -41,8 +45,9 @@ var classGuides = {
       ]
     },
     {
-      "class": "Mage",
-      "name": [
+      "name": "Mage",
+      "color": "mage",
+      "guideName": [
         "Hall of the Guardians"
       ],
       "link": [
@@ -50,8 +55,9 @@ var classGuides = {
       ]
     },
     {
-      "class": "Monk",
-      "name": [
+      "name": "Monk",
+      "color": "monk",
+      "guideName": [
         "PeakOfSerenity"
       ],
       "link": [
@@ -59,8 +65,9 @@ var classGuides = {
       ]
     },
     {
-      "class": "Paladin",
-      "name": [
+      "name": "Paladin",
+      "color": "paladin",
+      "guideName": [
         "Hammer of Wrath"
       ],
       "link": [
@@ -68,8 +75,9 @@ var classGuides = {
       ]
     },
     {
-      "class": "Priest",
-      "name": [
+      "name": "Priest",
+      "color": "priest",
+      "guideName": [
         "Warcraft Priests",
         "Netherlight Temple",
         "Focused Will"
@@ -81,8 +89,9 @@ var classGuides = {
       ]
     },
     {
-      "class": "Rogue",
-      "name": [
+      "name": "Rogue",
+      "color": "rogue",
+      "guideName": [
         "Ravenholdt"
       ],
       "link": [
@@ -90,8 +99,9 @@ var classGuides = {
       ]
     },
     {
-      "class": "Shaman",
-      "name": [
+      "name": "Shaman",
+      "color": "shaman",
+      "guideName": [
         "Earthshrine",
         "Ancestral Guidance"
       ],
@@ -101,8 +111,9 @@ var classGuides = {
       ]
     },
     {
-      "class": "Warlock",
-      "name": [
+      "name": "Warlock",
+      "color": "warlock",
+      "guideName": [
         "Council of the Black Harvest"
       ],
       "link": [
@@ -110,13 +121,27 @@ var classGuides = {
       ]
     },
     {
-      "class": "Warrior",
-      "name": [
+      "name": "Warrior",
+      "color": "warrior",
+      "guideName": [
         "Skyhold"
       ],
       "link": [
         "https://discord.gg/0pYY7932lTH4FHW6"
       ]
     }
-  ]
+  ],
+  "display": function() {
+    classGuides.classGuides.forEach(function(classGuide) {
+      $("#classGuides").append(HTMLclassGuidesStart);
+      var formattedClassGuidesButton = HTMLclassGuidesButton.replace("%class-color%", classGuide.color).replace("%class-name%", classGuide.name);
+      $(".class-guides-entry:last").append(formattedClassGuidesButton);
+      for(let i=0; i < classGuide.guideName.length; i++) {
+        var formattedClassGuidesLink = HTMLclassGuidesLink.replace("%discord-address%", classGuide['link'][i]).replace("%discord-name%", classGuide['guideName'][i]);
+        $(".guide-entry:last").append(formattedClassGuidesLink);
+      }
+    });
+  }
 }
+
+classGuides.display();
