@@ -85,7 +85,7 @@ p.priest:hover {
 
 
 
-/* Websites & addons links --------------------------------------------------- */
+/*// Websites & addons links //*/
 
 /* Three columns side by side */
 .column {
@@ -151,6 +151,20 @@ p.priest:hover {
 .addon-button:hover,
 .website-button:hover {
   background-color: #666666;
+}
+
+.description-author {
+  color: #FFFFFF;
+  text-align: right;
+}
+
+.website-description {
+  padding: 20px;
+}
+
+.description-author {
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 /*// Class colors //*/

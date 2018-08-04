@@ -166,6 +166,36 @@ var classGuides = {
       }
     });
   }
-}
+};
 
 classGuides.display();
+
+var websites = {
+  "websites": [
+    {
+      "name": "Icy Veins",
+      "description": "Poradniki klasowe",
+      "author": "Sargone",
+      "address": "https://www.icy-veins.com"
+    },
+    {
+      "name": "Noxxic",
+      "description": "Poradniki klasowe",
+      "author": "Sargone",
+      "address": "https://www.noxxic.com"
+    }
+  ],
+  "display": function() {
+      $("#websites").append(HTMLwebsitesStart);
+      websites.websites.forEach(function(website) {
+
+      var formattedWebsitesName = HTMLwebsitesName.replace("%website-name%", website.name);
+      var formattedWebsitesDescription = HTMLwebsitesDescription.replace("%website-description%", website.description);
+      var formattedWebsitesAuthor = HTMLwebsitesAuthor.replace("%description-author%", website.author);
+      var formattedWebsitesAddress = HTMLwebsitesAddress.replace("%website-address%", website.address);
+      $(".website-entry:last").append(formattedWebsitesName + formattedWebsitesDescription + formattedWebsitesAuthor + formattedWebsitesAddress);
+    });
+  }
+};
+
+websites.display();
