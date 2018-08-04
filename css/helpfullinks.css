@@ -158,7 +158,8 @@ p.priest:hover {
   text-align: right;
 }
 
-.website-description {
+.website-description,
+.addon-description {
   padding: 20px;
 }
 

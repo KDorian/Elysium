@@ -7,3 +7,9 @@ var HTMLwebsitesName = '<div class="column"><div class="card"><div class="contai
 var HTMLwebsitesDescription = '<p class="website-description">"%website-description%"</p>';
 var HTMLwebsitesAuthor = '<p class="description-author">- %description-author%</p>';
 var HTMLwebsitesAddress = '<p><a href="%website-address%"><button class="website-button">Link</button></a></p>';
+
+var HTMLaddonsStart = '<div class="addon-entry row"></div>';
+var HTMLaddonsName = '<div class="column"><div class="card"><div class="container-card"><h2 class="addon-name">%addon-name%</h2>';
+var HTMLaddonsDescription = '<p class="addon-description">"%addon-description%"</p>';
+var HTMLaddonsAuthor = '<p class="description-author">- %description-author%</p>';
+var HTMLaddonsAddress = '<p><a href="%addon-address%"><button class="addon-button">Link</button></a></p>';

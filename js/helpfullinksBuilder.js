@@ -199,3 +199,27 @@ var websites = {
 };
 
 websites.display();
+
+var addons = {
+  "addons": [
+    {
+      "name": "ELV UI",
+      "description": "Gotowy zestaw prostego i intuicyjnego UI dla raidera.",
+      "author": "Sargone",
+      "address": "https://www.tukui.org/welcome.php"
+    },
+  ],
+  "display": function() {
+      $("#addons").append(HTMLaddonsStart);
+      addons.addons.forEach(function(addon) {
+
+      var formattedAddonsName = HTMLaddonsName.replace("%addon-name%", addon.name);
+      var formattedAddonsDescription = HTMLaddonsDescription.replace("%addon-description%", addon.description);
+      var formattedAddonsAuthor = HTMLaddonsAuthor.replace("%description-author%", addon.author);
+      var formattedAddonsAddress = HTMLaddonsAddress.replace("%addon-address%", addon.address);
+      $(".addon-entry:last").append(formattedAddonsName + formattedAddonsDescription + formattedAddonsAuthor + formattedAddonsAddress);
+    });
+  }
+};
+
+addons.display();
