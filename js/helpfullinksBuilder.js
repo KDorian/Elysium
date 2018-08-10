@@ -18,12 +18,10 @@ var classGuides = {
       "icon": "images/recruitment/classes/dh-icon.png",
       "alt": "Class icon of demon hunters",
       "guideName": [
-        "The Fel Hammer",
-        "Mardum"
+        "The Fel Hammer"
       ],
       "link": [
-        "https://discord.gg/zGGkNGC",
-        "https://discord.gg/b6AvnjM"
+        "https://discord.gg/zGGkNGC"
       ]
     },
     {
@@ -188,7 +186,6 @@ var websites = {
   "display": function() {
       $("#websites").append(HTMLwebsitesStart);
       websites.websites.forEach(function(website) {
-
       var formattedWebsitesName = HTMLwebsitesName.replace("%website-name%", website.name);
       var formattedWebsitesDescription = HTMLwebsitesDescription.replace("%website-description%", website.description);
       var formattedWebsitesAuthor = HTMLwebsitesAuthor.replace("%description-author%", website.author);
@@ -212,7 +209,6 @@ var addons = {
   "display": function() {
       $("#addons").append(HTMLaddonsStart);
       addons.addons.forEach(function(addon) {
-
       var formattedAddonsName = HTMLaddonsName.replace("%addon-name%", addon.name);
       var formattedAddonsDescription = HTMLaddonsDescription.replace("%addon-description%", addon.description);
       var formattedAddonsAuthor = HTMLaddonsAuthor.replace("%description-author%", addon.author);

@@ -7,7 +7,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/progress.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" href="images/elysium-emblem.jpg">
+    <link rel="icon" href="images/logos/elysium-emblem.jpg">
   </head>
 
   <body>
@@ -15,15 +15,15 @@
       <div class="navbar">
 
           <ul class="topnav">
-            <li><a  href="index.html">Elysium</a></li>
-            <li><a  href="about.html">O nas</a></li>
+            <li><a href="index.html">Elysium</a></li>
+            <li><a href="about.html">O nas</a></li>
             <li><a class="active" href="progress.html">Progress</a></li>
             <li><a href="helpfullinks.html">Przydatne linki</a></li>
             <li><a href="recruitment.html">Rekrutacja</a></li>
           </ul>
         </div>
 
-        <div class="filter-progress">
+        <!-- <div class="filter-progress">
           <div id="myBtnContainer" class="">
             <button class="btn active-progress" onclick="filterSelection('all')"> Pokaż wszystko</button>
             <button class="btn" onclick="filterSelection('antorus')"> Antorus</button>
@@ -40,71 +40,113 @@
           </div>
 
           </div>
-        </div>
+        </div> -->
 
 
-      <div class="content">
-        <div class="welcome-article">
-          <article>
-            <img class="welcome-article-img" src="http://via.placeholder.com/350x150" alt=" " />
-            <h1 class="article-title">
+      <main class="content">
+
+        <section class="welcome-article">
+
+          <div class="top-section">
+            <h2>
               Obecny progress
+            </h2>
+          </div>
+
+          <div class="bottom-section">
+            <!-- <article>
+              <img class="welcome-article-img" src="http://via.placeholder.com/350x150" alt=" " />
+              <h1 class="article-title">
+                Obecny progress
+              </h1>
+            </article> -->
+          </div>
+
+        </section>
+
+        <section class="gallery">
+
+          <div class="top-section">
+            <h1>
+              Galeria
             </h1>
-          </article>
-        </div>
-        <section class="cards">
-        <article class="column antorus">
-          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
-          <h1 class="article-title">
-            Antorus
-          </h1>
-        </article>
-        <article class="column tomb-of-sargeras">
-          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
-          <h1 class="article-title">
-            Tomb of Sargeras
-          </h1>
-        </article>
-        <article class="column nighthold">
-          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
-          <h1 class="article-title">
-            Nighthold
-          </h1>
-        </article>
-        <article class="column old-raids trial-of-valor">
-          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
-          <h1 class="article-title">
-            Trial of Valor
-          </h1>
-        </article>
-        <article class="column old-raids emerald-nightmare">
-          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
-          <h1 class="article-title">
-            Emerald Nightmare
-          </h1>
-        </article>
-        <article class="column old-raids emerald-nightmare">
-          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
-          <h1 class="article-title">
-            Emerald Nightmare
-          </h1>
-        </article>
-        <article class="column old-raids emerald-nightmare">
-          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
-          <h1 class="article-title">
-            Emerald Nightmare
-          </h1>
-        </article>
-        <article class="column old-raids emerald-nightmare">
-          <img class="article-img" src="http://via.placeholder.com/350x150" alt=" " />
-          <h1 class="article-title">
-            Emerald Nightmare
-          </h1>
-        </article>
+          </div>
+
+          <div class="bottom-section">
+            <div id="gallery">
+
+              <div class="gallery-entry row">
+                <div class="column">
+                  <div id="myBtn" class="card">
+                    <div class="container-card">
+                      <div id="miniSlideshow">
+                        <div>
+                          <img class="miniSlides" src="%mini-slideshow-photo%">
+                        </div>
+                      </div>
+                      <h2 class="gallery-name">%gallery-name%</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
 
       </section>
-      </div>
 
+    </main>
+
+    <!-- Modals -->
+    <div id="modals">
+
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+
+          <span class="close">&times;</span>
+          <h1 class="raid-name">%raid-name%</h1>
+          <div class="gallery-container">
+
+            <div class="gallery-top-section">
+
+              <div class="mySlides">
+                <div class="kill-difficulty-name">
+                  %kill-difficulty% - %kill-name%
+                </div>
+                <img class="kill-image" src="images/progress/legion/atbt/atbt-hc-11-large.jpg">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+
+            <div class="gallery-bottom-section">
+
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <div class="gallery-row">
+
+                <div class="gallery-column">
+                  <img class="demo cursor" src="images/progress/legion/atbt/atbt-hc-11-large.jpg" style="width:100%" onclick="currentSlide(1)" alt="%kill-date%">
+                </div>
+
+              </div>
+
+            </div>
+
+          <!-- End of gallery container -->
+          </div>
+
+        <!-- End of Modal content -->
+        </div>
+
+      <!-- End of Modals -->
+      </div>
 
 
 

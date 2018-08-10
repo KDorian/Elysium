@@ -12,7 +12,7 @@ var meetUs = {
     },
     {
       "title": "Officer",
-      "image": "images/meet-us/officers/500x500.png",
+      "image": "images/meet-us/officers/Eothelis.png",
       "name": "Eothelis",
     },
     {

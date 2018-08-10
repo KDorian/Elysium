@@ -2,11 +2,13 @@
     box-sizing: border-box
 }
 
-.container {
-  margin-top: 100px;
+h1,
+h2 {
+  color: #FFFFFF;
+  text-align: center;
 }
 
-/* Progress filter -------------------------------------------------*/
+/*// Progress filter //*/
 
 .filter-progress {
   position: fixed;
@@ -15,17 +17,16 @@
   background-color: #333;
   z-index: 2;
   margin: 0 auto;
-
 }
 
 /* Hide columns by default */
-.column {
-    display: none;
-}
+/* .column {
+  display: none;
+} */
 
 /* The "show" class is added to the filtered elements */
 .show {
-    display: block;
+  display: block;
 }
 
 /* Style the buttons */
@@ -50,7 +51,7 @@
   color: white;
 }
 
-/* Dropdown button -------------------------------------------------*/
+/*// Dropdown button //*/
 
 .dropdown {
 
@@ -97,7 +98,7 @@
     display: block;
 }
 
-/* Progress ----------------------------------------------------*/
+/*// Progress //*/
 
 .welcome-article {
   height: 600px;
@@ -111,8 +112,55 @@
   width: 100%;
 }
 
-/* Grid styles -------------------------------------------------*/
-.cards {
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+.container-card {
+  cursor: pointer;
+  border: solid 5px #FFFFFF;
+  border-radius: 10px;
+}
+
+.container-card::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.gallery-entry {
+
+}
+
+/* .gallery-img, */
+/* .slideshow img { */
+.slideshow-image {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  /* border-bottom: solid 1px #FFFFFF; */
+}
+
+.miniSlides {
+  width:100%
+}
+
+.gallery-name {
+  padding: 20px;
+}
+
+/*// Grid styles //*/
+/* .cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 20px;
@@ -121,25 +169,192 @@
 
 .cards {
   width: 100%;
-  margin: 0 auto 30px;
-  padding: 20px 0px 20px 0px;
-}
+  margin: 0 auto 0px;
+  padding: 0px 0px 0px 0px;
+} */
 
-article {
-position: relative;
+/* article {
   max-width: 100%;
-}
+} */
 
 .article-img {
-  height: 400px;
   width: 100%;
   object-fit: cover;
 }
 
 .article-title {
-  position: absolute;
-  bottom: 5px;
+
+
   width: 100%;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*// Modal //*/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    /* padding-top: 0px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #000000; /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #333333;
+    margin: auto;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.gallery-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-modal,
+.modal-content h1 {
+  display: block;
+}
+
+/* Prevent body from scrolling when modal is opened */
+.noscroll {
+  overflow: hidden;
+}
+
+/*// Mini Slideshow //*/
+
+/*// Modal Gallery //*/
+.raid-name {
+  padding: 20px 2%;
+  border-bottom:  1px solid #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.gallery-img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.gallery-top-section {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* .kill-date {
+  color: #f2f2f2;
+  font-size: 2em;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+} */
+
+.kill-difficulty-name {
+  color: #ffffff;
+  font-size: 2em;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.kill-image {
+  width:100%;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.gallery-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.gallery-column {
+  float: left;
+  width: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.gallery-active,
+.demo:hover {
+  opacity: 1;
 }
