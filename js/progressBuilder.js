@@ -1,9 +1,9 @@
 var progressGallery = {
-  "Legion": [
+  "raids": [
       {
         "raidName": "Antorus, the Burning Throne",
         "carouselClass": "atbt",
-        "progress": "11/11 HC",
+        "progress": "11/11 Heroic",
         "encounters": [
         {
           "bossName": "Argus the Unmaker",
@@ -58,7 +58,7 @@ var progressGallery = {
     {
       "raidName": "Tomb of Sargeras",
       "carouselClass": "tos",
-      "progress": "9/9 HC",
+      "progress": "9/9 Heroic",
       "encounters": [
         {
           "bossName": "Kil'jaeden",
@@ -121,11 +121,259 @@ var progressGallery = {
           "image": "images/progress/legion/tos/tos-n-09-large.jpg"
         },
       ]
+    },
+    {
+      "raidName": "Nighthold",
+      "carouselClass": "nh",
+      "progress": "2/10 Mythic",
+      "encounters": [
+        {
+          "bossName": "Chronomatic Anomaly",
+          "difficulty": "Mythic",
+          "date": "25.04.2017",
+          "image": "images/progress/legion/nh/nh-m-02-large.jpg"
+        },
+        {
+          "bossName": "Skorpyron",
+          "difficulty": "Mythic",
+          "date": "11.04.2017",
+          "image": "images/progress/legion/nh/nh-m-01-large.jpg"
+        },
+        {
+          "bossName": "Gul'dan",
+          "difficulty": "Heroic",
+          "date": "21.03.2017",
+          "image": "images/progress/legion/nh/nh-hc-10-large.jpg"
+        },
+        {
+          "bossName": "Grand Migistrix Elisandre",
+          "difficulty": "Heroic",
+          "date": "28.02.2017",
+          "image": "images/progress/legion/nh/nh-hc-09-large.jpg"
+        },
+        {
+          "bossName": "High Botanist Tel'arm",
+          "difficulty": "Heroic",
+          "date": "18.02.2017",
+          "image": "images/progress/legion/nh/nh-hc-08-large.jpg"
+        },
+        {
+          "bossName": "Star Augur Etraeus",
+          "difficulty": "Heroic",
+          "date": "13.02.2017",
+          "image": "images/progress/legion/nh/nh-hc-07-large.jpg"
+        },
+        {
+          "bossName": "Tichondrius",
+          "difficulty": "Heroic",
+          "date": "11.02.2017",
+          "image": "images/progress/legion/nh/nh-hc-06-large.jpg"
+        },
+        {
+          "bossName": "Spellblade Aluriel",
+          "difficulty": "Heroic",
+          "date": "07.02.2017",
+          "image": "images/progress/legion/nh/nh-hc-05-large.jpg"
+        },
+        {
+          "bossName": "Krosus",
+          "difficulty": "Heroic",
+          "date": "04.02.2017",
+          "image": "images/progress/legion/nh/nh-hc-04-large.jpg"
+        },
+        {
+          "bossName": "Trillax",
+          "difficulty": "Heroic",
+          "date": "28.01.2017",
+          "image": "images/progress/legion/nh/nh-hc-03-large.jpg"
+        },
+        {
+          "bossName": "Chronomatic Anomaly",
+          "difficulty": "Heroic",
+          "date": "28.01.2017",
+          "image": "images/progress/legion/nh/nh-hc-02-large.jpg"
+        },
+        {
+          "bossName": "Skorpyron",
+          "difficulty": "Heroic",
+          "date": "24.01.2017",
+          "image": "images/progress/legion/nh/nh-hc-01-large.jpg"
+        },
+        {
+          "bossName": "Gul'dan",
+          "difficulty": "Normal",
+          "date": "24.01.2017",
+          "image": "images/progress/legion/nh/nh-n-10-large.jpg"
+        },
+        {
+          "bossName": "Grand Migistrix Elisandre",
+          "difficulty": "Normal",
+          "date": "21.01.2017",
+          "image": "images/progress/legion/nh/nh-n-09-large.jpg"
+        },
+        {
+          "bossName": "High Botanist Tel'arm",
+          "difficulty": "Normal",
+          "date": "21.01.2017",
+          "image": "images/progress/legion/nh/nh-n-08-large.jpg"
+        },
+        {
+          "bossName": "Star Augur Etraeus",
+          "difficulty": "Normal",
+          "date": "19.01.2017",
+          "image": "images/progress/legion/nh/nh-n-07-large.jpg"
+        },
+      ]
+    },
+    {
+      "raidName": "Trial of Valor",
+      "carouselClass": "tov",
+      "progress": "3/3 Heroic",
+      "encounters": [
+        {
+          "bossName": "Helya",
+          "difficulty": "Heroic",
+          "date": "14.01.2017",
+          "image": "images/progress/legion/tov/tov-hc-03-large.jpg"
+        },
+        {
+          "bossName": "Guarm",
+          "difficulty": "Heroic",
+          "date": "27.12.2016",
+          "image": "images/progress/legion/tov/tov-hc-02-large.jpg"
+        },
+        {
+          "bossName": "Odyn",
+          "difficulty": "Heroic",
+          "date": "21.12.2016",
+          "image": "images/progress/legion/tov/tov-hc-01-large.jpg"
+        },
+        {
+          "bossName": "Helya",
+          "difficulty": "Normal",
+          "date": "12.11.2017",
+          "image": "images/progress/legion/tov/tov-n-03-large.jpg"
+        },
+        {
+          "bossName": "Odyn",
+          "difficulty": "Normal",
+          "date": "09.11.2016",
+          "image": "images/progress/legion/tov/tov-n-01-large.jpg"
+        }
+      ]
+    },
+    {
+      "raidName": "Emerald Nightmare",
+      "carouselClass": "en",
+      "progress": "5/7 Mythic",
+      "encounters": [
+        {
+          "bossName": "Il'gynoth",
+          "difficulty": "Mythic",
+          "date": "05.03.2017",
+          "image": "images/progress/legion/en/en-m-05-large.jpg"
+        },
+        {
+          "bossName": "Elerethe Renferal",
+          "difficulty": "Mythic",
+          "date": "26.02.2017",
+          "image": "images/progress/legion/en/en-m-04-large.jpg"
+        },
+        {
+          "bossName": "Nythendra",
+          "difficulty": "Mythic",
+          "date": "23.02.2017",
+          "image": "images/progress/legion/en/en-m-01-large.jpg"
+        },
+        {
+          "bossName": "Xavius",
+          "difficulty": "Heroic",
+          "date": "25.10.2016",
+          "image": "images/progress/legion/en/en-hc-07-large.jpg"
+        },
+        {
+          "bossName": "Cenarius",
+          "difficulty": "Heroic",
+          "date": "22.10.2016",
+          "image": "images/progress/legion/en/en-hc-06-large.jpg"
+        },
+        {
+          "bossName": "Il'gynoth",
+          "difficulty": "Heroic",
+          "date": "18.10.2016",
+          "image": "images/progress/legion/en/en-hc-05-large.jpg"
+        },
+        {
+          "bossName": "Ursoc",
+          "difficulty": "Heroic",
+          "date": "15.10.2016",
+          "image": "images/progress/legion/en/en-hc-04-large.jpg"
+        },
+        {
+          "bossName": "Elerethe Renferal",
+          "difficulty": "Heroic",
+          "date": "15.10.2016",
+          "image": "images/progress/legion/en/en-hc-03-large.jpg"
+        },
+        {
+          "bossName": "Dragons of Nightmare",
+          "difficulty": "Heroic",
+          "date": "30.09.2016",
+          "image": "images/progress/legion/en/en-hc-02-large.jpg"
+        },
+        {
+          "bossName": "Nythendra",
+          "difficulty": "Heroic",
+          "date": "30.09.2016",
+          "image": "images/progress/legion/en/en-hc-01-large.jpg"
+        },
+        {
+          "bossName": "Xavius",
+          "difficulty": "Normal",
+          "date": "28.09.2016",
+          "image": "images/progress/legion/en/en-n-07-large.jpg"
+        },
+        {
+          "bossName": "Cenarius",
+          "difficulty": "Normal",
+          "date": "25.09.2016",
+          "image": "images/progress/legion/en/en-n-06-large.jpg"
+        },
+        {
+          "bossName": "Il'gynoth",
+          "difficulty": "Normal",
+          "date": "25.09.2016",
+          "image": "images/progress/legion/en/en-n-05-large.jpg"
+        },
+        {
+          "bossName": "Ursoc",
+          "difficulty": "Normal",
+          "date": "24.09.2016",
+          "image": "images/progress/legion/en/en-n-04-large.jpg"
+        },
+        {
+          "bossName": "Elerethe Renferal",
+          "difficulty": "Normal",
+          "date": "24.09.2016",
+          "image": "images/progress/legion/en/en-n-03-large.jpg"
+        },
+        {
+          "bossName": "Dragons of Nightmare",
+          "difficulty": "Normal",
+          "date": "24.09.2016",
+          "image": "images/progress/legion/en/en-n-02-large.jpg"
+        },
+        {
+          "bossName": "Nythendra",
+          "difficulty": "Normal",
+          "date": "21.09.2016",
+          "image": "images/progress/legion/en/en-n-01-large.jpg"
+        },
+      ]
     }
-
   ],
   "display": function() {
-    progressGallery.Legion.forEach(function(raid) {
+    progressGallery.raids.forEach(function(raid) {
       $("#gallery").append(HTMLprogressStart);
       var formattedProgressMiniSlideshow = HTMLprogressMiniSlideshow;
       $(".gallery-entry:last").append(formattedProgressMiniSlideshow);
