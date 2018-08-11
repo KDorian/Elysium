@@ -81,24 +81,40 @@ span.onclick = function() {
 
 //*/ Mini Slideshow /*//
 
-//
+//*/ Antorus, the Burning Throne - Carousel /*//
+var myIndexAtbt = 0;
+carouselAtbt();
 
-var myIndex = 0;
-carousel();
-
-function carousel() {
+function carouselAtbt() {
     var i;
-    var x = document.getElementsByClassName("miniSlides");
+    var x = document.getElementsByClassName("miniSlides atbt");
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 1000); // Change image every 2 seconds
+    myIndexAtbt++;
+    if (myIndexAtbt > x.length) {myIndexAtbt = 1}
+    x[myIndexAtbt-1].style.display = "block";
+    setTimeout(carouselAtbt, 2000); // Change image every 2 seconds
+}
+
+//*/ Tomb of Sargeras - Carousel /*//
+var myIndexTos = 0;
+carouselTos();
+
+function carouselTos() {
+    var i;
+    var x = document.getElementsByClassName("miniSlides tos");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndexTos++;
+    if (myIndexTos > x.length) {myIndexTos = 1}
+    x[myIndexTos-1].style.display = "block";
+    setTimeout(carouselTos, 2000); // Change image every 2 seconds
 }
 
 //*/ Gallery Slideshow /*//
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
