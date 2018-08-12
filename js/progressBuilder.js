@@ -3,6 +3,7 @@ var progressGallery = {
       {
         "raidName": "Antorus, the Burning Throne",
         "carouselClass": "atbt",
+        "modalId": "Atbt",
         "progress": "11/11 Heroic",
         "encounters": [
         {
@@ -58,6 +59,7 @@ var progressGallery = {
     {
       "raidName": "Tomb of Sargeras",
       "carouselClass": "tos",
+      "modalId": "Tos",
       "progress": "9/9 Heroic",
       "encounters": [
         {
@@ -125,6 +127,7 @@ var progressGallery = {
     {
       "raidName": "Nighthold",
       "carouselClass": "nh",
+      "modalId": "Nh",
       "progress": "2/10 Mythic",
       "encounters": [
         {
@@ -228,6 +231,7 @@ var progressGallery = {
     {
       "raidName": "Trial of Valor",
       "carouselClass": "tov",
+      "modalId": "Tov",
       "progress": "3/3 Heroic",
       "encounters": [
         {
@@ -265,6 +269,7 @@ var progressGallery = {
     {
       "raidName": "Emerald Nightmare",
       "carouselClass": "en",
+      "modalId": "En",
       "progress": "5/7 Mythic",
       "encounters": [
         {
@@ -372,10 +377,10 @@ var progressGallery = {
       ]
     }
   ],
-  "display": function() {
+  "miniSlideshow": function() {
     progressGallery.raids.forEach(function(raid) {
       $("#gallery").append(HTMLprogressStart);
-      var formattedProgressMiniSlideshow = HTMLprogressMiniSlideshow;
+      var formattedProgressMiniSlideshow = HTMLprogressMiniSlideshow.replace("%modal-id%", raid.modalId);
       $(".gallery-entry:last").append(formattedProgressMiniSlideshow);
       var formattedCarouselClass = HTMLprogressSlide.replace("%carousel-class%", raid.carouselClass);
       var formattedProgressMiniSlideshowName = HTMLprogressMiniSlideshowName.replace("%gallery-name%", raid.raidName);
@@ -387,7 +392,28 @@ var progressGallery = {
       var formattedProgressKills = HTMLprogressKills.replace("%kills%", raid.progress);
       $(".mini-slideshow-entry:last").append(formattedProgressKills);
     });
+  },
+  "modalGallery": function() {
+    progressGallery.raids.forEach(function(raid) {
+      $("#modals").append(HTMLprogressModalStart);
+      var formattedProgressModalRaidName = HTMLprogressModalRaidName.replace("%raid-name%", raid.raidName).replace("%modal-id%", raid.modalId).replace("%modal-id2%", raid.carouselClass);
+      var formattedProgressModalGalleryTopSection = HTMLprogressModalGalleryTopSection.replace("%kill-difficulty%", raid.encounters[0].difficulty).replace("%kill-name%", raid.encounters[0].bossName).replace("%kill-image%", raid.encounters[0].image);
+      // var formattedProgressModalGalleryBottomSection = HTMLprogressModalGalleryBottomSection;
+      $(".modal-entry:last").append(formattedProgressModalRaidName + formattedProgressModalGalleryTopSection );
+      // var encounterNumber = 1;
+
+      // raid.encounters.forEach(function(encounter) {
+      //   var formattedProgressSlide = HTMLprogressMiniPhoto.replace("%mini-photo%", encounter.image).replace("%no-of-slide%", encounterNumber).replace("%kill-date%", encounter.date);
+      //   $(".modal-mini-photo-entry:last").append(formattedProgressSlide);
+      //   encounterNumber++;
+      // });
+
+
+    });
   }
 };
 
-progressGallery.display();
+progressGallery.miniSlideshow();
+progressGallery.modalGallery();
+
+// .replace("%raid-class%", raid.carouselClass).replace("%raid%", raid.modalId).replace("%raid2%", raid.modalId)

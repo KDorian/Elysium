@@ -82,25 +82,26 @@ function carouselEn() {
 
 //*/ Modals /*//
 
+//*/ Antorus, the Burning Throne - Modal /*//
 // Get the modal
-var modal = document.getElementById('myModal');
+var modalAtbt = document.getElementById('myModal Atbt');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btnAtbt = document.getElementById("myBtn Atbt");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var spanAtbt = document.getElementsByClassName("close atbt")[0];
 
 // When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
+btnAtbt.onclick = function() {
+    modalAtbt.style.display = "block";
     // Prevent body from scrolling when modal is opened
     $("body").addClass("noscroll");
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
+spanAtbt.onclick = function() {
+    modalAtbt.style.display = "none";
     $("body").removeClass("noscroll")
 }
 
@@ -111,33 +112,107 @@ span.onclick = function() {
 //     }
 // }
 
-//*/ Gallery Slideshow /*//
+//*/ Tomb of Sargeras - Modal /*//
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var modalTos = document.getElementById('myModal Tos');
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+var btnTos = document.getElementById("myBtn Tos");
+
+var spanTos = document.getElementsByClassName("close tos")[0];
+
+btnTos.onclick = function() {
+    modalTos.style.display = "block";
+    $("body").addClass("noscroll");
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+spanTos.onclick = function() {
+    modalTos.style.display = "none";
+    $("body").removeClass("noscroll")
 }
 
-function showSlides(n) {
-  var j;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (j = 0; j < slides.length; j++) {
-      slides[j].style.display = "none";
-  }
-  for (j = 0; j < dots.length; j++) {
-      dots[j].className = dots[j].className.replace(" gallery-active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " gallery-active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+//*/ Nighthold - Modal /*//
+
+var modalNh = document.getElementById('myModal Nh');
+
+var btnNh = document.getElementById("myBtn Nh");
+
+var spanNh = document.getElementsByClassName("close nh")[0];
+
+btnNh.onclick = function() {
+    modalNh.style.display = "block";
+    $("body").addClass("noscroll");
 }
+
+spanNh.onclick = function() {
+    modalNh.style.display = "none";
+    $("body").removeClass("noscroll")
+}
+
+//*/ Trial of Valor - Modal /*//
+
+var modalTov = document.getElementById('myModal Tov');
+
+var btnTov = document.getElementById("myBtn Tov");
+
+var spanTov = document.getElementsByClassName("close tov")[0];
+
+btnTov.onclick = function() {
+    modalTov.style.display = "block";
+    $("body").addClass("noscroll");
+}
+
+spanTov.onclick = function() {
+    modalTov.style.display = "none";
+    $("body").removeClass("noscroll")
+}
+
+//*/ Emerald Nightmare - Modal /*//
+
+var modalEn = document.getElementById('myModal En');
+
+var btnEn = document.getElementById("myBtn En");
+
+var spanEn = document.getElementsByClassName("close en")[0];
+
+btnEn.onclick = function() {
+    modalEn.style.display = "block";
+    $("body").addClass("noscroll");
+}
+
+spanEn.onclick = function() {
+    modalEn.style.display = "none";
+    $("body").removeClass("noscroll")
+}
+
+//*/ Antorus, the Burning Throne - Gallery Slideshow /*//
+
+// var slideIndex = 1;
+// showSlides(slideIndex);
+//
+// function plusSlides(n) {
+//   showSlides(slideIndex += n);
+// }
+//
+// function currentSlide(n) {
+//   showSlides(slideIndex = n);
+// }
+//
+// function showSlides(n) {
+//   var j;
+//   var slides = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("demo");
+//   var captionText = document.getElementById("caption");
+//   if (n > slides.length) {slideIndex = 1}
+//   if (n < 1) {slideIndex = slides.length}
+//   for (j = 0; j < slides.length; j++) {
+//       slides[j].style.display = "none";
+//   }
+//   for (j = 0; j < dots.length; j++) {
+//       dots[j].className = dots[j].className.replace(" gallery-active", "");
+//   }
+//   slides[slideIndex-1].style.display = "block";
+//   dots[slideIndex-1].className += " gallery-active";
+//   captionText.innerHTML = dots[slideIndex-1].alt;
+// }
+
+//*/ Tomb of Sargeras - Gallery Slideshow /*//
