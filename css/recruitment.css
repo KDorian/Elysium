@@ -13,24 +13,6 @@ p {
   line-height: 30px;
 }
 
-/*// Regulation //*/
-
-.regs h2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.regs {
-  padding-left: 10%;
-  padding-right: 10%;
-  line-height: 30px;
-}
-
-.regs li {
-  color: #FFFFFF;
-  list-style-type: decimal;
-}
-
 /*// Recruitment //*/
 
 .column {

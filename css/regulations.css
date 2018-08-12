@@ -1,0 +1,44 @@
+h1,
+h2,
+p {
+  color: white;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+p {
+  line-height: 30px;
+}
+
+/*// Regulation //*/
+
+.regs h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.regs {
+  padding-left: 10%;
+  padding-right: 10%;
+  line-height: 30px;
+}
+
+.regs li {
+  color: #FFFFFF;
+  list-style-type: decimal;
+}
+
+.center {
+  text-align: center;
+}
+
+.loot {
+  margin: 0 20px;
+}
+
+.loot li {
+  list-style: circle;
+}
