@@ -52,7 +52,7 @@ h3,
     border: 1px solid #ccc;
     width: 70%;
     border-left: none;
-    height: 530px;
+    height: 480px;
 }
 
 .tab-row {
@@ -60,7 +60,7 @@ h3,
 }
 
 .tab-image {
-  width:  70%;
+  width:  50%;
   margin: 0px auto;
 }
 
